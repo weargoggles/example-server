@@ -1,3 +1,4 @@
 requests
 coreapi
 flask
+flask-cors

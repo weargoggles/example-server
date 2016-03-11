@@ -1,10 +1,12 @@
 from collections import OrderedDict
 from coreapi import Document, Link, Error, Field, dump
 from flask import Flask, Response, request
+from flask.ext.cors import CORS
 import uuid
 
 
 app = Flask(__name__)
+CORS(app)
 
 # We store all the notes in a mapping of UUIDs to dictionary instances.
 # In a real system we would be using a database or other persistent backend.
